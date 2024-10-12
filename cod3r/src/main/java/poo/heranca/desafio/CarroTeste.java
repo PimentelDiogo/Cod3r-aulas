@@ -8,6 +8,7 @@ public class CarroTeste {
         ferrari.acelerar(Acao.ACELERAR);
         System.out.println(fiat);
         System.out.println(ferrari);
-
+        ferrari.ligarTurbo();
+        System.out.println(ferrari);
     }
 }

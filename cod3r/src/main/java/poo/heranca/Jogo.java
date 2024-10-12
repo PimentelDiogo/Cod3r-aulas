@@ -3,13 +3,9 @@ package poo.heranca;
 public class Jogo {
     public static void main(String[] args) {
 
-        Jogador j1 = new Jogador();
-        Heroi j2 = new Heroi();
+        Jogador j1 = new Jogador(10,21);
+        Heroi j2 = new Heroi(10,20);
 
-        j2.x=10;
-        j2.y=21;
-        j1.x=10;
-        j1.y=20;
         j1.andar(Direcao.NORTE);
         j2.andar(Direcao.OESTE);
 

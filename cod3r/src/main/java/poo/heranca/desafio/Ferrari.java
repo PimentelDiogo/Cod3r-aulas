@@ -1,6 +1,6 @@
 package poo.heranca.desafio;
 
-public class Ferrari extends Carro{
+public class Ferrari extends Carro implements Esportivo{
     @Override
     void acelerar(Acao acao) {
         velocidadeAtual+=15;
@@ -10,5 +10,15 @@ public class Ferrari extends Carro{
     @Override
     void frear(Acao acao) {
         super.frear(acao);
+    }
+
+    @Override
+    public void ligarTurbo() {
+        velocidadeAtual = 35;
+    }
+
+    @Override
+    public void desligarTurbo() {
+        velocidadeAtual = 15;
     }
 }
